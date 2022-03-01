@@ -23,14 +23,14 @@ app.use(express.static(publicDirectory));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    name: "Andrew Mead",
+    name: "Martin Schoeler",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    name: "Andrew Mead",
+    name: "Martin Schoeler",
   });
 });
 
@@ -38,7 +38,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help Page",
     message: "This page is for help",
-    name: "Andrew Mead",
+    name: "Martin Schoeler",
   });
 });
 
@@ -86,7 +86,7 @@ app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404 Routes Error",
     message: "Help Article Not Found",
-    name: "Andrew Mead",
+    name: "Martin Schoeler",
   });
 });
 
@@ -94,7 +94,7 @@ app.get("*", (req, res) => {
   res.render("404", {
     title: "404 Routes Error",
     message: "Page Not Found",
-    name: "Andrew Mead",
+    name: "Martin Schoeler",
   });
 });
 
